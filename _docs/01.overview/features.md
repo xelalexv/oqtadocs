@@ -11,7 +11,7 @@ order: 1
 
 *OqtaDrive* is built around an *Arduino* that connects via its GPIO ports to the *Microdrive* interface and via serial connection to a daemon running on a host machine. This daemon host could be anything, ranging from your PC to a small embedded board such as a *RaspberryPi Zero*, as long as it can run a supported OS (*Linux*, *MacOS*, *Windows*). The same *Arduino* can be used with both *Spectrum* and *QL*, without any reconfiguration.
 
-The adapter itself does not provide a UI, but instead exposes a *REST API* endpoint. This can be used by different tools for controlling the daemon. Currently, there's a command line tool and a web UI. Just open it in your browser, be it on your PC or your phone, and load your cartridges.
+The adapter itself does not provide a UI. Instead the daemon exposes a *REST API* endpoint. This can be used by different tools for controlling the daemon. Currently, there's a command line tool and a web UI. Just open it in your browser, be it on your PC or your phone, and load your cartridges.
 
 #### What Can I Do With This?
 *OqtaDrive*'s architecture makes it very flexible, so many setups are possible. The simplest one would be just the *Arduino* that connects your *Interface 1* or *QL* with your PC or Mac, and you manage everything from there. If you're rather looking for a standalone solution, you could for example run the daemon on a *RaspberryPi Zero W*, and place this into a *Microdrive* or 3D printed case. Have a look at the [build section]({{site.baseurl}}/02.getting-started/build) for available options.
