@@ -2,8 +2,8 @@
 # Site
 
 title: OqtaDrive
-url: "https://xelalexv.github.io/oqtadocs"
-baseurl:
+url: https://xelalexv.github.io
+baseurl: /oqtadocs
 google_analytics_key:
 show_full_navigation: true
 
