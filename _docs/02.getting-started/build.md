@@ -43,6 +43,16 @@ This is the fully fledged, complete solution including a *RaspberryPi Zero W (1 
     </tr>
 </table>
 
+##### Using an *Arduino Pro Mini*
+Since in the standalone configuration, the USB port of the *Arduino Nano* is not needed, it's also possible to use an *Arduino Pro Mini* instead, which comes without the USB port. It's important to note the different pin out though. **It's not a drop-in replacement!** A few patch wires however are enough to fix this (pins `D10`, `D11`, `D12`, `A0`, and `A4`). In below example, the `D10` and `A0` pins of the *Pro Mini* were not fitted, since they would otherwise connect with the wrong signals on the PCB (`A0` and `A4`) and block the patch wires. Software-wise the *Pro Mini* is fully compatible.
+
+<table>
+    <tr>
+        <td width="45%"><img src="{{site.baseurl}}/images/oq-promini-1.jpg" /></td>
+        <td width="45%"><img src="{{site.baseurl}}/images/oq-promini-2.jpg" /></td>
+    </tr>
+</table>
+
 #### *QL* Add On
 This PCB is installed into the case of the *QL*, the right choice if you want *OqtaDrive* permanently available in your *QL*. It replaces drive 1, but drive 2 can still be used and freely assigned to any drive number, or turned off. Tom also designed a 3D printed mounting bracket for the installation.
 
