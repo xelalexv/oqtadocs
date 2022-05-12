@@ -9,7 +9,8 @@ show_full_navigation: true
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /images/oqtadrive.png
-description: OqtaDrive Landing Page
+tagline: Sinclair Microdrive emulator
+description: OqtaDrive is a Sinclair Microdrive hardware emulator for Spectrum and QL
 author:
   name: Alexander Vollschwitz
   email: vollschwitz@gmx.net

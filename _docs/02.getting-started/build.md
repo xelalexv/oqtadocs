@@ -22,7 +22,7 @@ This is the smallest member of the *OqtaDrive* PCB family created by Tom. If you
 </table>
 
 #### Lite & Mini
-> These two PCB were early prototypes create by Tom. They are included here for completeness, to show the evolution of PCB development.
+> These two PCB were early prototypes created by Tom. They are included here for completeness, to show the evolution of PCB development.
 
 The *Lite* and *Mini* are a little large than the *Micro*, and have two edge connectors, one for *Spectrum* and one for *QL*. This has the advantage that the rear of the unit with the USB connector will always point to the back when you connect to either one. That's because an *Interface 1* has its edge connector on the left hand side, the *QL* on the right hand side. The rumble motor is not supported on these PCBs, as they were created before that feature was added. Otherwise, there's no difference with the *Micro*.
 
