@@ -22,7 +22,8 @@ serve:
 
 .PHONY: publish
 publish: notdirty build
-	rm -rf _site/sitemap.xml _site/Dockerfile _site/Makefile _site/*.sublime*
+	rm -rf _site/sitemap.xml _site/Dockerfile _site/Makefile _site/*.sublime* \
+		_site/scratchpad
 	git branch -D gh-pages || true
 	git push origin :gh-pages || true
 	git checkout -b gh-pages
