@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="r_wFLEsE2ek8QyEM5X_6CQ1rOofoeWta1IWyPyETk7Q" />
+
+		<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Development | OqtaDrive</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Development" />
+<meta name="author" content="Alexander Vollschwitz" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Approach I’ve always been fascinated by the Microdrive technology. In particular it’s the approach of using mass-produced components from other products (e.g. audio head from cassette tape decks as read/write head), to create an inexpensive solution that could -at least somewhat- compete with the much more expensive floppy disk drives common at the time. The emulator should therefore be designed in the same spirit, and use as few and cheap components as possible." />
+<meta property="og:description" content="Approach I’ve always been fascinated by the Microdrive technology. In particular it’s the approach of using mass-produced components from other products (e.g. audio head from cassette tape decks as read/write head), to create an inexpensive solution that could -at least somewhat- compete with the much more expensive floppy disk drives common at the time. The emulator should therefore be designed in the same spirit, and use as few and cheap components as possible." />
+<link rel="canonical" href="https://xelalexv.github.io/oqtadocs/09.background/development/" />
+<meta property="og:url" content="https://xelalexv.github.io/oqtadocs/09.background/development/" />
+<meta property="og:site_name" content="OqtaDrive" />
+<script type="application/ld+json">
+{"headline":"Development","@type":"Article","url":"https://xelalexv.github.io/oqtadocs/09.background/development/","author":{"@type":"Person","name":"Alexander Vollschwitz"},"description":"Approach I’ve always been fascinated by the Microdrive technology. In particular it’s the approach of using mass-produced components from other products (e.g. audio head from cassette tape decks as read/write head), to create an inexpensive solution that could -at least somewhat- compete with the much more expensive floppy disk drives common at the time. The emulator should therefore be designed in the same spirit, and use as few and cheap components as possible.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://xelalexv.github.io/oqtadocs/images/oqtadrive.png"},"name":"Alexander Vollschwitz"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="https://xelalexv.github.io/oqtadocs/feed.xml" title="OqtaDrive" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/oqtadocs/css/main.css">
+		<link rel="apple-touch-icon" href="/oqtadocs/images/logo-dark.png">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png">
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/oqtadocs/"><img src="/oqtadocs/images/logo-white-t.png" width="88" height="88" alt="OqtaDrive logo"></a>
+				OqtaDrive
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/oqtadocs/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/">Welcome</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/01.overview/features/">Overview</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/features/">Main Features</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/drives/">Hardware Drives</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/snapshots/">Loading Snapshots</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/repo/">Cartridge Repo</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/02.getting-started/build/">Getting Started</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/build/">Build</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/install/">Install</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/configure/">Configure</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/troubleshoot/">Troubleshoot</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/oqtadocs/09.background/microdrive/">Background</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/09.background/microdrive/">The Microdrive</a></li>
+								
+									<li class="nav-item current"><a href="/oqtadocs/09.background/development/">Development</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/changelog/">What's New</a>
+					</li>
+					<li class="nav-item top-level">
+						<a href="https://github.com/xelalexv/oqtadrive">
+							<img width="32" src="/oqtadocs/images/GitHub-Mark-Light-120px-plus.png" />
+							<div>Project Home</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Background</h2>
+				<h3>Development</h3>
+			</div>
+			<article class="content">
+				<h4 id="approach">Approach</h4>
+<p>I’ve always been fascinated by the Microdrive technology. In particular it’s the approach of using mass-produced components from other products (e.g. audio head from cassette tape decks as read/write head), to create an inexpensive solution that could -at least somewhat- compete with the much more expensive floppy disk drives common at the time. The emulator should therefore be designed in the same spirit, and use as few and cheap components as possible.</p>
+
+<p><img src="/oqtadocs/images/oq-inside.jpg" alt="inside QL" /></p>
+
+<p>The <em>Arduino Nano</em> seemed to be the right choice for that. If it all possible, it should also be the only major component in the design, not counting resistors, diodes, and connectors. This design goal shaped <em>OqtaDrive</em>’s structure: The <em>Arduino</em> takes the part of a protocol converter between the Microdrive interface and a daemon process running on a host machine, that manages Microdrive data. One advantage with this is that no storage components (e.g. SD card reader) and no UI components (LCD screen, buttons) are needed, since the daemon can be easily controlled form the daemon host. Another advantage is that the daemon host will usually be connected to a network, opening up interesting opportunities for use and further development of the emulator.</p>
+
+<h4 id="format">Format</h4>
+<p>First I had to find out how the Microdrive records data, to estimate whether this could be pulled off with an <em>Arduino Nano</em> in the first place. There is a lot of information available, but of course it’s also fun to supplement this with a bit of research of your own. I started with the <em>Spectrum</em>, by looking at the signals of the Microdrive port on the <em>Interface 1</em> while formatting a cartridge. Data is written on two tracks, with above mentioned stereo cassette tape head. Bytes are alternating between the two tracks, with an offset of four bits against each other. One bit is 12µs long. A <code class="highlighter-rouge">0</code> is signaled by no level change during the duration of the bit (approx. 41kHz), and a <code class="highlighter-rouge">1</code> by a level change at 6µs from start of bit (approx. 83kHz).</p>
+
+<p><img src="/oqtadocs/images/oq-bits.jpg" alt="1 and 0 bits" /></p>
+
+<p>Next up was the logical format, for which the <a href="https://worldofspectrum.org/archive/books/spectrum-microdrive-book">Spectrum Microdrive Book</a> by Ian Logan was particularly helpful. A cartridge is organized in up to 254 sectors. Each sector consists of a 27 byte header and a 540 byte data record, separated by short gaps (3.75ms after a header, 7.0ms after a record). This was also the greatest challenge: The RAM of the <em>Arduino Nano</em> (2KB) is far too small to hold a complete cartridge (144KB). So data has to be continuously passed back and forth between <em>Nano</em> and daemon. At a bit rate of 1Mb/s over the serial connection that should at least theoretically be possible. Luckily, my first trials showed that the connection remains stable at this speed. After a few more experiments the big moment had come - for the first time I could correctly receive all sectors while formatting a cartridge.</p>
+
+<p><img src="/oqtadocs/images/oq-first-contact.png" alt="first success" /></p>
+
+<h4 id="prototypes">Prototypes</h4>
+<p>The first success in communicating with the Microdrive interface was followed by a long phase of prototyping, both for hardware as well as firmware for the <em>Arduino Nano</em> and the daemon software. Over many iterations and refactorings, a first version of the emulator gradually evolved, which supported all the features of the original Microdrive, but for the time being only for the <em>Spectrum</em>.</p>
+
+<p><img src="/oqtadocs/images/oq-prototypes.jpg" alt="first two prototypes" /></p>
+
+<h4 id="ql-support">QL Support</h4>
+<p>After the prototyping phase, I suspended work on the project for quite some time, due to changed priorities. In early 2021 though, <a href="https://worldofspectrum.org/forums/discussion/58474/strange-microdrive-format">two</a> <a href="https://worldofspectrum.org/forums/discussion/58258/microdrive-logic-flow">discussions</a> over at <em>World of Spectrum</em> sparked my interest again. I resumed work on the project and started to get it into shape for publication. The biggest still missing part was support for the <em>Sinclair QL</em>. My goal was to avoid creating a separate variant of the emulator. That is, the same adapter should work with both <em>Spectrum</em> and <em>QL</em>, ideally with <em>auto detect</em>.</p>
+
+<p>This meant back to research &amp; experimentation, since it became quickly evident that after all there are quite a few differences between <em>Spectrum</em> and <em>QL</em> Microdrives: Starting with a higher data rate (50/100kHz), swapped tracks and shorter gaps after headers and records, over a changed logical structure, all the way to a completely different format procedure, there were many surprises. <em>OqtaDrive</em>’s architecture proved helpful in tackling all of this. Many of the necessary changes could be addressed in the daemon, which in terms of software development was much easier to do. And finally, another big moment - first successful format with the <em>QL</em>.</p>
+
+<p><img src="/oqtadocs/images/oq-ql-format-dir.png" alt="first success with QL" /></p>
+
+<h4 id="open-sourcing">Open Sourcing</h4>
+<p>Beginning of May 2021 support for the <em>QL</em> was complete and the adapter could automatically detect <em>Spectrum</em> and <em>QL</em>, as desired. After many refactorings the code base was also cleaned up enough to warrant publishing on <em>GitHub</em>. From the start it was important to me to make this project available under a free license, so anyone interested in this could build it.</p>
+
+<p>By open sourcing, <em>OqtaDrive</em> could also win the first contributors. Tom Dalby designed several PCBs for various configurations along with models for 3D printing cases - from a standalone config with <em>Raspberry Pi</em> onboard to a minimal micro version. Stephan Preuß relentlessly tested many pre-releases, on <em>Spectrum</em> and <em>QL</em>, and found quite a few bugs. And not to forget all the discussions that sprang up over the collaboration, which were important for the direction of <em>OqtaDrive</em>. For example, initially I wasn’t really interested in an standalone config that could be controlled via a web UI. But due to Tom’s and Stephan’s suggestions and friendly nudging, this is today my favorite config.</p>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

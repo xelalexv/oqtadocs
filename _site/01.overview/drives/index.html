@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="r_wFLEsE2ek8QyEM5X_6CQ1rOofoeWta1IWyPyETk7Q" />
+
+		<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Hardware Drives | OqtaDrive</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Hardware Drives" />
+<meta name="author" content="Alexander Vollschwitz" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="OqtaDrive is a Sinclair Microdrive hardware emulator for Spectrum and QL" />
+<meta property="og:description" content="OqtaDrive is a Sinclair Microdrive hardware emulator for Spectrum and QL" />
+<link rel="canonical" href="https://xelalexv.github.io/oqtadocs/01.overview/drives/" />
+<meta property="og:url" content="https://xelalexv.github.io/oqtadocs/01.overview/drives/" />
+<meta property="og:site_name" content="OqtaDrive" />
+<script type="application/ld+json">
+{"headline":"Hardware Drives","@type":"Article","url":"https://xelalexv.github.io/oqtadocs/01.overview/drives/","author":{"@type":"Person","name":"Alexander Vollschwitz"},"description":"OqtaDrive is a Sinclair Microdrive hardware emulator for Spectrum and QL","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://xelalexv.github.io/oqtadocs/images/oqtadrive.png"},"name":"Alexander Vollschwitz"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="https://xelalexv.github.io/oqtadocs/feed.xml" title="OqtaDrive" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/oqtadocs/css/main.css">
+		<link rel="apple-touch-icon" href="/oqtadocs/images/logo-dark.png">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png">
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/oqtadocs/"><img src="/oqtadocs/images/logo-white-t.png" width="88" height="88" alt="OqtaDrive logo"></a>
+				OqtaDrive
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/oqtadocs/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/">Welcome</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/oqtadocs/01.overview/features/">Overview</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/features/">Main Features</a></li>
+								
+									<li class="nav-item current"><a href="/oqtadocs/01.overview/drives/">Hardware Drives</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/snapshots/">Loading Snapshots</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/repo/">Cartridge Repo</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/02.getting-started/build/">Getting Started</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/build/">Build</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/install/">Install</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/configure/">Configure</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/troubleshoot/">Troubleshoot</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/09.background/microdrive/">Background</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/09.background/microdrive/">The Microdrive</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/09.background/development/">Development</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/changelog/">What's New</a>
+					</li>
+					<li class="nav-item top-level">
+						<a href="https://github.com/xelalexv/oqtadrive">
+							<img width="32" src="/oqtadocs/images/GitHub-Mark-Light-120px-plus.png" />
+							<div>Project Home</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Overview</h2>
+				<h3>Hardware Drives</h3>
+			</div>
+			<article class="content">
+				<p><img src="/oqtadocs/images/oq-config-internal.jpg" alt="drives" /></p>
+
+<p><em>OqtaDrive</em> can coexist with actual hardware <em>Microdrive</em> units. If you want to combine <em>OqtaDrive</em> with hardware <em>Microdrive</em> units, then there are essentially two choices for placing the <em>OqtaDrive</em> adapter - either at the end of the drive chain or at the start. Here are a few considerations and pros &amp; cons for both options.</p>
+
+<h4 id="last-in-chain"><em>Last in Chain</em></h4>
+
+<h5 id="pros">Pros</h5>
+<ul>
+  <li>simple - adapter just plugs into the <em>Interface 1</em>, <em>QL</em>, or <em>Microdrive</em> unit edge connector</li>
+  <li>requires just one edge connector plug</li>
+  <li>no hardware modifications needed</li>
+</ul>
+
+<h5 id="cons">Cons</h5>
+<ul>
+  <li>hardware <em>Microdrive</em> units are always upstream of the adapter, and cannot be turned off or mapped into different slots; on the <em>QL</em> for example this means that <em>OqtaDrive</em> can only emulate <code class="highlighter-rouge">mdv3</code> through <code class="highlighter-rouge">mdv8</code></li>
+</ul>
+
+<h4 id="first-in-chain"><em>First in Chain</em></h4>
+
+<h5 id="pros-1">Pros</h5>
+<ul>
+  <li>
+    <p>hardware <em>Microdrive</em> units can be freely moved as a group within the chain, or turned off completely</p>
+
+    <blockquote>
+      <p>To take advantage of drive mapping, you need to route the <code class="highlighter-rouge">COMMS_OUT</code> signal from the adapter to the <code class="highlighter-rouge">COMMS</code> input of the first of the hardware drives, and make a couple of settings in the config section at the top of <code class="highlighter-rouge">arduino/oqtadrive.ino</code>. Tom Dalby’s <em>Micro</em> and <em>Standalone</em> PCBs (see <a href="/oqtadocs/02.getting-started/build">build section</a>) are prepared for this.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h5 id="cons-1">Cons</h5>
+<ul>
+  <li>requires an additional edge connector (plug) for connecting hardware <em>Microdrive</em> units; alternatively, the adapter can be installed into an <em>Interface 1</em> or <em>QL</em>, but cannot be used with other machines in that case</li>
+  <li>for the <em>QL</em>, this requires modifying the hardware</li>
+</ul>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

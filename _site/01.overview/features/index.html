@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="r_wFLEsE2ek8QyEM5X_6CQ1rOofoeWta1IWyPyETk7Q" />
+
+		<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Main Features | OqtaDrive</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Main Features" />
+<meta name="author" content="Alexander Vollschwitz" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="OqtaDrive is a Sinclair Microdrive hardware emulator for Spectrum and QL" />
+<meta property="og:description" content="OqtaDrive is a Sinclair Microdrive hardware emulator for Spectrum and QL" />
+<link rel="canonical" href="https://xelalexv.github.io/oqtadocs/01.overview/features/" />
+<meta property="og:url" content="https://xelalexv.github.io/oqtadocs/01.overview/features/" />
+<meta property="og:site_name" content="OqtaDrive" />
+<script type="application/ld+json">
+{"headline":"Main Features","@type":"Article","url":"https://xelalexv.github.io/oqtadocs/01.overview/features/","author":{"@type":"Person","name":"Alexander Vollschwitz"},"description":"OqtaDrive is a Sinclair Microdrive hardware emulator for Spectrum and QL","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://xelalexv.github.io/oqtadocs/images/oqtadrive.png"},"name":"Alexander Vollschwitz"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="https://xelalexv.github.io/oqtadocs/feed.xml" title="OqtaDrive" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/oqtadocs/css/main.css">
+		<link rel="apple-touch-icon" href="/oqtadocs/images/logo-dark.png">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png">
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/oqtadocs/"><img src="/oqtadocs/images/logo-white-t.png" width="88" height="88" alt="OqtaDrive logo"></a>
+				OqtaDrive
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/oqtadocs/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/">Welcome</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/oqtadocs/01.overview/features/">Overview</a>
+							<ul>
+								
+									<li class="nav-item current"><a href="/oqtadocs/01.overview/features/">Main Features</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/drives/">Hardware Drives</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/snapshots/">Loading Snapshots</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/repo/">Cartridge Repo</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/02.getting-started/build/">Getting Started</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/build/">Build</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/install/">Install</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/configure/">Configure</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/troubleshoot/">Troubleshoot</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/09.background/microdrive/">Background</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/09.background/microdrive/">The Microdrive</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/09.background/development/">Development</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/changelog/">What's New</a>
+					</li>
+					<li class="nav-item top-level">
+						<a href="https://github.com/xelalexv/oqtadrive">
+							<img width="32" src="/oqtadocs/images/GitHub-Mark-Light-120px-plus.png" />
+							<div>Project Home</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Overview</h2>
+				<h3>Main Features</h3>
+			</div>
+			<article class="content">
+				<p><img src="/oqtadocs/images/oq-config-external.jpg" alt="basic" /></p>
+
+<h4 id="what-is-oqtadrive">What is <em>OqtaDrive</em>?</h4>
+<p><em>OqtaDrive</em> emulates a bank of up to 8 <em>Microdrives</em> for use with a <em>Sinclair Spectrum</em> with <em>Interface 1</em>, or with a <em>QL</em>. The goal is to functionally create a <em>faithful reproduction of the original</em>. On the <em>Spectrum</em>/<em>QL</em> side, operating the emulated <em>Microdrives</em> should feel exactly the same as using the real thing. So by definition, it does not try to compete with more “modern day” mass storage solutions for <em>Spectrum</em> and <em>QL</em>.</p>
+
+<p><em>OqtaDrive</em> is built around an <em>Arduino</em> that connects via its GPIO ports to the <em>Microdrive</em> interface and via serial connection to a daemon running on a host machine. This daemon host could be anything, ranging from your PC to a small embedded board such as a <em>RaspberryPi Zero</em>, as long as it can run a supported OS (<em>Linux</em>, <em>MacOS</em>, <em>Windows</em>). The same <em>Arduino</em> can be used with both <em>Spectrum</em> and <em>QL</em>, without any reconfiguration.</p>
+
+<p>The adapter itself does not provide a UI. Instead the daemon exposes a <em>REST API</em> endpoint. This can be used by different tools for controlling the daemon. Currently, there’s a command line tool and a web UI. Just open it in your browser, be it on your PC or your phone, and load your cartridges.</p>
+
+<h4 id="what-can-i-do-with-this">What Can I Do With This?</h4>
+<p><em>OqtaDrive</em>’s architecture makes it very flexible, so many setups are possible. The simplest one would be just the <em>Arduino</em> that connects your <em>Interface 1</em> or <em>QL</em> with your PC or Mac, and you manage everything from there. If you’re rather looking for a standalone solution, you could for example run the daemon on a <em>RaspberryPi Zero W</em>, and place this into a <em>Microdrive</em> or 3D printed case. Have a look at the <a href="/oqtadocs/02.getting-started/build">build section</a> for available options.</p>
+
+<h5 id="feature-overview">Feature Overview</h5>
+
+<ul>
+  <li>Supports all <em>Microdrive</em> operations on <em>Spectrum</em> with <em>Interface 1</em> and on <em>QL</em>, no modifications or additional software required</li>
+  <li>Can co-exist with actual hardware <em>Microdrive</em> units, which can be mapped on demand to any slot in the drive chain or turned off</li>
+  <li>Daemon can run on <em>Linux</em>, <em>MacOS</em>, and <em>Windows</em></li>
+  <li>Control daemon via command line interface and web UI</li>
+  <li>Load &amp; save from/to <em>MDR</em> and <em>MDV</em> formatted cartridge files</li>
+  <li>For <em>Spectrum</em>, <em>Z80</em> and <em>SNA</em> snapshot files can be directly loaded, no additional software required</li>
+  <li>All supported formats can also be loaded from <em>zip</em>, <em>gzip</em>, and <em>7z</em> compressed files</li>
+  <li>Directly load cartridge files from the web</li>
+  <li>Store your cartridge collection on the daemon host and search &amp; load from any client</li>
+  <li>Connect a <em>rumble motor</em> for authentic sound ;-)</li>
+  <li>List virtual drives &amp; contents of cartridges</li>
+  <li>Hex dump cartridge contents for inspection</li>
+</ul>
+
+<p>Due to the minimal hardware required, <em>OqtaDrive</em> is also very cost-efficient. In the simplest setup, you only need an <em>Arduino Nano</em> and a few resistors and diodes. Additionally, if you own a <em>Spectrum</em> and a <em>QL</em>, you can use it with both, no need to have dedicated adapters. But above all, there’s the fun involved in building this!</p>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

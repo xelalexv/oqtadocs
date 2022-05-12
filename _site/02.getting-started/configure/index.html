@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="r_wFLEsE2ek8QyEM5X_6CQ1rOofoeWta1IWyPyETk7Q" />
+
+		<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Configure | OqtaDrive</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Configure" />
+<meta name="author" content="Alexander Vollschwitz" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Adapter" />
+<meta property="og:description" content="Adapter" />
+<link rel="canonical" href="https://xelalexv.github.io/oqtadocs/02.getting-started/configure/" />
+<meta property="og:url" content="https://xelalexv.github.io/oqtadocs/02.getting-started/configure/" />
+<meta property="og:site_name" content="OqtaDrive" />
+<script type="application/ld+json">
+{"headline":"Configure","@type":"Article","url":"https://xelalexv.github.io/oqtadocs/02.getting-started/configure/","author":{"@type":"Person","name":"Alexander Vollschwitz"},"description":"Adapter","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://xelalexv.github.io/oqtadocs/images/oqtadrive.png"},"name":"Alexander Vollschwitz"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="https://xelalexv.github.io/oqtadocs/feed.xml" title="OqtaDrive" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/oqtadocs/css/main.css">
+		<link rel="apple-touch-icon" href="/oqtadocs/images/logo-dark.png">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/oqtadocs/images/logo-dark.png">
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/oqtadocs/"><img src="/oqtadocs/images/logo-white-t.png" width="88" height="88" alt="OqtaDrive logo"></a>
+				OqtaDrive
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/oqtadocs/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/">Welcome</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/01.overview/features/">Overview</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/features/">Main Features</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/drives/">Hardware Drives</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/snapshots/">Loading Snapshots</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/01.overview/repo/">Cartridge Repo</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/oqtadocs/02.getting-started/build/">Getting Started</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/build/">Build</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/install/">Install</a></li>
+								
+									<li class="nav-item current"><a href="/oqtadocs/02.getting-started/configure/">Configure</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/02.getting-started/troubleshoot/">Troubleshoot</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/oqtadocs/09.background/microdrive/">Background</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/oqtadocs/09.background/microdrive/">The Microdrive</a></li>
+								
+									<li class="nav-item "><a href="/oqtadocs/09.background/development/">Development</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/oqtadocs/changelog/">What's New</a>
+					</li>
+					<li class="nav-item top-level">
+						<a href="https://github.com/xelalexv/oqtadrive">
+							<img width="32" src="/oqtadocs/images/GitHub-Mark-Light-120px-plus.png" />
+							<div>Project Home</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Getting Started</h2>
+				<h3>Configure</h3>
+			</div>
+			<article class="content">
+				<h4 id="adapter">Adapter</h4>
+
+<h5 id="static-configuration">Static Configuration</h5>
+<p>The adapter recognizes what it’s plugged in to, i.e. <em>Interface 1</em> or <em>QL</em>. But it’s also possible to force a particular machine. Have a look at the config section at the top of <a href="https://github.com/xelalexv/oqtadrive/blob/master/arduino/oqtadrive.ino"><code class="highlighter-rouge">oqtadrive.ino</code></a>. There are a few more settings that can be changed. If you need to maintain several configs for various adapters, you can alternatively place your settings in separate header files and include as needed. The details for this are also explained in the config section of <code class="highlighter-rouge">oqtadrive.ino</code>.</p>
+
+<blockquote>
+  <p>Note: Whenever you make config changes, whether directly in <code class="highlighter-rouge">oqtadrive.ino</code> or in a config header file, don’t forget to flash the firmware again.</p>
+</blockquote>
+
+<h5 id="dynamic-configuration">Dynamic Configuration</h5>
+<p>A few adapter settings can also be changed on the fly via the <code class="highlighter-rouge">oqtactl</code> command (in the future also via the web UI). These settings are:</p>
+
+<ul>
+  <li><em>Client setting</em>, i.e. whether the adapter is connected to an <em>Interface 1</em> or a <em>QL</em>. This can be set with the <code class="highlighter-rouge">--client</code> option, when starting the daemon or when forcing a resync (see <code class="highlighter-rouge">oqtactl serve --help</code> and <code class="highlighter-rouge">oqtactl resync --help</code>).</li>
+  <li><em>Mapping of hardware drives</em>, unless <code class="highlighter-rouge">HW_GROUP_LOCK</code> in <code class="highlighter-rouge">oqtadrive.ino</code> is set to <code class="highlighter-rouge">true</code> (see <code class="highlighter-rouge">oqtactl map --help</code>).</li>
+  <li><em>Rumble level</em> of the vibration motor, if installed (see <code class="highlighter-rouge">oqtactl config --help</code>).</li>
+</ul>
+
+<h4 id="daemon--command">Daemon &amp; Command</h4>
+<p>The <code class="highlighter-rouge">oqtactl</code> binary gets all its configuration from the passed command line arguments. Several of these arguments can alternatively be provided as environment variables. See <code class="highlighter-rouge">oqtactl {action} --help</code> to find out which settings support this, and for the names of the variables.</p>
+
+<p>For example, the <code class="highlighter-rouge">oqtactl serve</code> command accepts an <code class="highlighter-rouge">--address</code> argument that allows you to set the address and port on which the daemon listens. If you change this setting from the default, you need to provide it whenever you run <code class="highlighter-rouge">oqtactl</code> to query or control the daemon. Since this can be quite tedious, you can set the address and port in environment variable <code class="highlighter-rouge">OQTADRIVE_ADDRESS</code>, e.g. in your <code class="highlighter-rouge">.bashrc</code> file if you’re on <em>Linux</em> (<em>Windows</em> and <em>MacOS</em> provide ways of doing that as well, but I’m not familiar with those):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">OQTADRIVE_ADDRESS</span><span class="o">=</span>oqtadrive-box:8080
+</code></pre></div></div>
+
+<p>The setting would now be automatically picked up when the daemon is started with <code class="highlighter-rouge">oqtactl serve</code>, as well as with any other invocation of <code class="highlighter-rouge">oqtactl</code> that needs to communicate with the daemon. You no longer need to specify the <code class="highlighter-rouge">--address</code> argument.</p>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>
